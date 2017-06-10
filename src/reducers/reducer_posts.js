@@ -6,7 +6,7 @@ import _ from 'lodash';
 
    switch (action.type) {
      case FETCH_POSTS:
-        return _.mapKeys(action.paylod.data, 'id');
+        return _.mapKeys(action.payload.data, 'id');
        break;
 
      default:
